@@ -2,13 +2,17 @@ import json
 import sys
 import os
 import subprocess
+from urllib.parse import urlparse
+
+
 data=None
 
 print("starting script")
 
-url=sys.argv[1]
+url=urlparse(sys.argv[1]).netloc
 
 with open(os.path.abspath("config.json"),encoding="utf-8") as f:
+  url=url.lower().replace("https://","").replace("http://","").rstrip("/")
   data = json.load(f)
   v2_path=data["v2rayN-path"]
 
