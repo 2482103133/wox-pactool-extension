@@ -1,4 +1,4 @@
-# 通过WOX软件, 快速添加url到v2rayN的自定义pac列表中, 并且立刻生效
+## 快速添加url到v2rayN的自定义pac列表中, 并且立刻生效
 
 ## Wox
 1. 下载[Wox](http://www.wox.one/)
