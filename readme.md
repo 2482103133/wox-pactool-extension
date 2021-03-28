@@ -1,9 +1,9 @@
 ## 帮你快速添加url到v2rayN的自定义pac列表
 
-## Wox
+## 安装Wox插件
 1. 下载[Wox](http://www.wox.one/)
 
-2. Clone本项目到Wox插件目录
+2. Clone本项目到Wox插件目录或Wox命令行输入```wpm install pac tool```
 
 3. 修改插件配置文件config.json
 ```
@@ -14,6 +14,8 @@
 4. 重启Wox
 
 5. Wox命令行输入pac [your url]
+
+
 
 
 ## 命令行
