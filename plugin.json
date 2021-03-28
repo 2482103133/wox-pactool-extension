@@ -1,10 +1,10 @@
 {
-    "ID":"2f4e384e-76ce-45c3-aea2-b16f5e5c328f",
+    "ID":"fb83724ae00004962b100048fd6c002c6",
     "ActionKeyword":"pac",
     "Name":"PAC Tool",
     "Description":"Add urls to custom PAC",
     "Author":"Collin",
-    "Version":"1.0",
+    "Version":"1.1.0",
     "Language":"python",
     "Website":"https://github.com/Wox-launcher/Wox",
     "IcoPath":"Images\\app.png",
