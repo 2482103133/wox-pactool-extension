@@ -1,4 +1,4 @@
-## 帮你快速添加url到v2rayN的自定义pac列表
+## 帮你快速添加domain到v2rayN的自定义pac列表
 
 ## 安装Wox插件
 1. 下载[Wox](http://www.wox.one/)
