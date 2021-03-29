@@ -8,11 +8,15 @@ from urllib.parse import urlparse
 data=None
 
 print("starting script")
+url=sys.argv[1]
 
-url=urlparse(sys.argv[1]).netloc
+if url.lower().startswith("http:") or url.lower().startswith("https:"):
+  url=urlparse(sys.argv[1]).netloc
 
+print(url)
+# url=sys.argv[1]
 with open(os.path.abspath("config.json"),encoding="utf-8") as f:
-  url=url.lower().replace("https://","").replace("http://","").rstrip("/")
+
   data = json.load(f)
   v2_path=data["v2rayN-path"]
 
@@ -21,7 +25,11 @@ with open(v2_path+'/guiNConfig.json',encoding="utf-8") as f:
   s=set()
   s.update(data["userPacRule"])
   s.add(url)
-  data["userPacRule"]=list(s)
+  
+  l=list(s)
+  if l.__contains__(""):
+    l.remove("")
+  data["userPacRule"]=l
 
 if(data is not None):
   with open(v2_path+'/guiNConfig.json',"w",encoding="utf-8" ) as f:

@@ -10,7 +10,7 @@ class HelloWorld(Wox):
     def query(self, query):
         results = []
         results.append({
-            "Title": "Add the url to pac",
+            "Title": "Add {} to pac file".format(query),
             "SubTitle": "{}".format(query),
             "IcoPath":"Images/app.png",
             "ContextData": "ctxData",
